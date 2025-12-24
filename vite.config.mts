@@ -3,7 +3,6 @@ import { defineConfig, loadEnv } from 'vite'
 import ElectronPlugin, { ElectronOptions } from 'vite-plugin-electron'
 import RendererPlugin from 'vite-plugin-electron-renderer'
 import EslintPlugin from 'vite-plugin-eslint'
-import VuetifyPlugin from 'vite-plugin-vuetify'
 import VueJsx from '@vitejs/plugin-vue-jsx'
 import Vue from '@vitejs/plugin-vue'
 import { rmSync } from 'fs'
@@ -22,6 +21,7 @@ export default defineConfig(({ mode }) => {
     ...process.env,
     ...loadEnv(mode, process.cwd())
   }
+  console.log(process.env)
 
   rmSync('dist', { recursive: true, force: true })
 
@@ -100,10 +100,6 @@ export default defineConfig(({ mode }) => {
     plugins: [
       Vue(),
       VueJsx(),
-      // Docs: https://github.com/vuetifyjs/vuetify-loader
-      VuetifyPlugin({
-        autoImport: true
-      }),
       // Docs: https://github.com/gxmari007/vite-plugin-eslint
       EslintPlugin(),
       // Docs: https://github.com/electron-vite/vite-plugin-electron
