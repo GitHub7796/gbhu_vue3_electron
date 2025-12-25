@@ -21,5 +21,10 @@
       "*.mjs": "javascript",
       "*.cjs": "javascript",
       "*.mts": "typescript"
-    }
+    },
+    "Codegeex.RepoIndex": true,
+    "commentTranslate.source": "renping.deepseek-comment-translate-deepseek",
+    "commentTranslate.browse.mode": "inplace",
+    "commentTranslate.targetLanguage": "zh-CN",
+    "commentTranslate.hover.enabled": true
 }
