@@ -8,11 +8,13 @@
     "thrift": "^0.22.0"
   },
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "build-python": "pyinstaller ./py/thrift_server.py --clean"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "electron": "39.2.7"
+    "electron": "39.2.7",
+    "electron-packager": "^17.1.2"
   }
 }

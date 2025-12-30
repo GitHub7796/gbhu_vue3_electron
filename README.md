@@ -1,12 +1,8 @@
 # WIN10 Electron+Python界面开发（通信方式：thrift）
+Electron+Python 
 
-​		Python做界面开发要么繁琐要么太丑，同时Python客户端开发人员又是非常稀少的。而WEB前端工程师一抓一大把，同时WEB前端所开发出来的界面及交互效果都是非常美观的，同时有的软件可能客户端也需要，WEB端也需要，甚至移动端也需要，在要求美观的同时，有没有一个解决方案就能适应所有平台的呢？
 
-​		没错，目前最好的解决方案就是做WEB开发，首先其本身能在WEB上使用，对于移动端来讲，打包WEBAPP的工具一搜一大堆，而想同时能满足客户端的需求？ 那就可以使用Electron了。
-
-​		[Electron](https://electronjs.org/docs)也已经比较成熟了，目前很多界面每隔的桌面程序都是Electron开发的，比如说：Github、Skype、Atom、VSCode等。
-
-​		而此篇博文主要分享Electron+Python的方式做界面开发。网上也有比较多的教程，但大部分教程里Electron和Python的通信方式要么是Http，要么是zerorpc，Http太笨重，且不太适合客户端程序；npm的zerorpc安装过程太繁琐，太多版本问题，反正我用npm安装zerorpc搞了好几天都没弄好，因此最终换其他通信方案（期间也试过谷歌的gRPC），比较后最终选择Thrift，除了性能优势外，安装及配置都比较简单。
+网上也有比较多的教程，但大部分教程里Electron和Python的通信方式要么是Http，要么是zerorpc，Http太笨重，且不太适合客户端程序；npm的zerorpc安装过程太繁琐，太多版本问题，反正我用npm安装zerorpc搞了好几天都没弄好，因此最终换其他通信方案（期间也试过谷歌的gRPC），比较后最终选择Thrift，除了性能优势外，安装及配置都比较简单。
 
 ​		流程如下：
 
