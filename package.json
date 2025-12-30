@@ -9,7 +9,7 @@
   },
   "scripts": {
     "start": "electron .",
-    "build-python": "pyinstaller ./py/thrift_server.py --clean",
+    "build-python": "pyinstaller ./py/thrift_server.py --clean --onefile --windowed --name thrift_server",
     "pack-app": "./node_modules/.bin/electron-packager . --overwrite --ignore=py$"
   },
   "author": "",
