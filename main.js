@@ -63,8 +63,9 @@ let pyPort = null
 
 const createPyProc = () => {
   // let port = '4242'
-  let script = path.join(__dirname, 'py', 'thrift_server.py')
+  // let script = path.join(__dirname, 'py', 'thrift_server.py')
   // pyProc = require('child_process').spawn('python', [script])
+  let script = path.join(__dirname, 'py', 'dist','thrift_server')
   pyProc = require('child_process').execFile(script)
   if (pyProc != null) {
     console.log('child process success')

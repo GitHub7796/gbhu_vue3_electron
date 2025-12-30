@@ -9,7 +9,8 @@
   },
   "scripts": {
     "start": "electron .",
-    "build-python": "pyinstaller ./py/thrift_server.py --clean"
+    "build-python": "pyinstaller ./py/thrift_server.py --clean",
+    "pack-app": "./node_modules/.bin/electron-packager . --overwrite --ignore=py$"
   },
   "author": "",
   "license": "ISC",
